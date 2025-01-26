@@ -1,37 +1,25 @@
-﻿string variable_string = "это строка";
-int variable_int = 12;
-double variable_double = 24,5;
-bool variable_bool = true;
-char variable_char = 'a';
-char variable_char2 = 'b';
-
-Console.WriteLine("Тип данных - строчка " + variable_string);
-Console.WriteLine("Тип данных - целочисленный " + variable_int);
-Console.WriteLine("Тип данных - символьный " + variable_char);
-Console.WriteLine("Тип данных - дробный " + variable_double);
-Console.WriteLine("Тип данных - логический " + variable_bool);
-
-Console.WriteLine(variable_int + variable_double);
+﻿
 
 
+void DataType:
 
+while (true)
+{
+    Console.WriteLine("введите свой баланс: ");
 
-Console.WriteLine("Введите переменную типа int: ");
-int xInt;
-xInt = Int32.Parse(Console.ReadLine());
-Console.WriteLine(xInt + " - ваше значение. ");
+    int amountOfmoney = Int32.Parse(Console.ReadLine());
 
-Console.WriteLine("Введите переменную типа char: ");
-char xChar;
-xChar = Char.Parse(Console.ReadLine());
-Console.WriteLine(xChar + " - ваше значение. ");
+    if (amountOfmoney <= 2000)
+    {
+        Console.WriteLine("Я богат, куплю 2 дошика вместо 1-го");
+    }
+    else if (amountOfmoney < 0)
+    {
+        Console.WriteLine("я бомж, у меня мало денег");
+    }
+    else
+    {
+        Console.WriteLine("нет денег, продам почку");
+    }
+}
 
-Console.WriteLine("Введите переменную типа bool: ");
-bool xBool;
-xBool = Boolean.Parse(Console.ReadLine());
-Console.WriteLine(xBool + " - ваше значение. ");
-
-Console.WriteLine("Введите переменную типа double: ");
-double xDouble;
-xDouble = Double.Parse(Console.ReadLine());
-Console.WriteLine(xDouble + " - ваше значение. ");
